@@ -9,6 +9,8 @@ python manage.py startapp agenda
 
 criar app e add no settings
 
+Migrations:
+
 ```
 
 Configurar o git
