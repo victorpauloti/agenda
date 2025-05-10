@@ -118,10 +118,15 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
 STATIC_URL = 'static/'
-
+# todos arquivos estaticos dentra da pasta indicada aqui para django manipular
 STATICFILES_DIRS = [
-    BASE_DIR / 'static'
+    BASE_DIR / 'base_static',
 ]
+
+STATIC_ROOT = BASE_DIR / 'static' # collectstatis - nao versionar
+
+MEDIA_URL = 'media/' # arquivos enviado pelo usuario
+MEDIA_ROOT = BASE_DIR / 'media' # nao versionar
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
